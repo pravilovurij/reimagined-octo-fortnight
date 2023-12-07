@@ -1,0 +1,12 @@
+        var newState = state
+        newState.collage = elementsTransformer.rotate(
+            gestureState,
+            in: state.collage
+        )
+        
+        return newState
+    }
+    
+    private func onTap(_ point: CGPoint,
+                       in state: AppState) -> AppState {
+        
